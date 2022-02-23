@@ -1,4 +1,4 @@
-//package mvcexample;
+package mvcexample;
 
 // A database with two counter components
 
