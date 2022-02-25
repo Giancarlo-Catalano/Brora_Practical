@@ -17,6 +17,7 @@ public class Controller1 extends JFrame
                          implements ActionListener {
   
     private Model model;
+    private String title;
     private View1 view1;
     private View2 view2;
     private JButton clearViews;  // For direct message to views
@@ -24,13 +25,15 @@ public class Controller1 extends JFrame
     private JButton quit;        // As it says
     
     // Constructor
-    public Controller1(Model model) {
+    public Controller1(Model model String title) {
         
         // Record reference to the model
         this.model = model;
+
+	//set title
+	this.title = title;
         
         // Configure the window
-        setTitle("Controller1");
         setLocation(40,40);
         setSize(350,150);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
